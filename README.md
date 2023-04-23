@@ -22,6 +22,9 @@ Things you may want to cover:
 
 * Deployment instructions
 
+# Project Notion
+https://www.notion.so/8119c97a62544de19126ace955a5da98?v=ad4f58e2893d4daa861d88ccc00ff4f8
+
 # Using APIs
 
 * https://docs.trefle.io/
