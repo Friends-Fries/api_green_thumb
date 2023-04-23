@@ -22,4 +22,7 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+# Using APIs
+
+* https://docs.trefle.io/
+* https://www.agroapi.cnptia.embrapa.br/store/apis/info?name=Bioinsumos&version=v1&provider=agroapi
