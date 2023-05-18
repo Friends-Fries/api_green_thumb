@@ -48,6 +48,11 @@ end
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem "web-console"
+  gem "binding_of_caller"
   gem "rufo"
+  gem "bullet"
+  gem "solargraph"
+  gem "htmlbeautifier"
 end
 
