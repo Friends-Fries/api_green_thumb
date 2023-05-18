@@ -1,11 +1,11 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  uf: MyString
-  country: one
+tokyo:
+  name: Tokyo
+  uf: TO
+  country: japan
 
-two:
-  name: MyString
-  uf: MyString
-  country: two
+floripa:
+  name: Florianópolis
+  uf: SC
+  country: brasil
