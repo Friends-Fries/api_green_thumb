@@ -3,6 +3,6 @@ class City < ApplicationRecord
   belongs_to :country
   has_many :users
 
-  # VALIDATES
+  # VALIDATIONS
   validates :uf, :name, presence: true
 end

@@ -6,7 +6,7 @@ class CityTest < ActiveSupport::TestCase
     @city_2 = cities(:floripa)
   end
 
-  test "should not create without" do
+  test "should not be valid without" do
     city_without_name = City.new(uf: @city.uf, country: @city.country)
     city_without_uf = City.new(name: @city.name, country: @city.country)
     city_without_country = City.new(name: @city.name, uf: @city.uf)
