@@ -18,6 +18,5 @@ class User < ApplicationRecord
     volunteer: 0,
     associate: 1,
     plot_manager: 2,
-
   }
 end
