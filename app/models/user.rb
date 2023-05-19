@@ -12,4 +12,12 @@ class User < ApplicationRecord
 
   # VALIDATIONS
   validates :email, presence: true
+
+  # ENUMS
+  enum role: {
+    volunteer: 0,
+    associate: 1,
+    plot_manager: 2,
+
+  }
 end
