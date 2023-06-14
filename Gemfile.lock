@@ -117,6 +117,10 @@ GEM
       reline (>= 0.3.0)
     jaro_winkler (1.5.4)
     json (2.6.3)
+    jsonapi-resources (0.10.7)
+      activerecord (>= 4.1)
+      concurrent-ruby
+      railties (>= 4.1)
     jwt (2.7.0)
     kramdown (2.4.0)
       rexml
@@ -269,6 +273,7 @@ DEPENDENCIES
   devise
   devise-jwt
   htmlbeautifier
+  jsonapi-resources
   pg (~> 1.1)
   puma (~> 5.0)
   pundit
