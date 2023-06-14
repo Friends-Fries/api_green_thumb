@@ -58,3 +58,5 @@ end
 
 # API JSON
 gem "jsonapi-resources"
+
+gem "countries", "~> 5.4"
