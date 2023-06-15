@@ -80,6 +80,8 @@ GEM
       activesupport (>= 3.0.0)
       uniform_notifier (~> 1.11)
     concurrent-ruby (1.2.2)
+    countries (5.4.0)
+      unaccent (~> 0.3)
     crass (1.0.6)
     date (3.3.3)
     debug (1.7.2)
@@ -117,6 +119,10 @@ GEM
       reline (>= 0.3.0)
     jaro_winkler (1.5.4)
     json (2.6.3)
+    jsonapi-resources (0.10.7)
+      activerecord (>= 4.1)
+      concurrent-ruby
+      railties (>= 4.1)
     jwt (2.7.0)
     kramdown (2.4.0)
       rexml
@@ -237,6 +243,7 @@ GEM
     timeout (0.3.2)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    unaccent (0.4.0)
     unicode-display_width (2.4.2)
     uniform_notifier (1.16.0)
     warden (1.2.9)
@@ -265,10 +272,12 @@ DEPENDENCIES
   binding_of_caller
   bootsnap
   bullet
+  countries (~> 5.4)
   debug
   devise
   devise-jwt
   htmlbeautifier
+  jsonapi-resources
   pg (~> 1.1)
   puma (~> 5.0)
   pundit
