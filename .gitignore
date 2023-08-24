@@ -29,3 +29,5 @@
 /config/master.key
 
 /pull_request_template.md
+
+/.env
