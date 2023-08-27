@@ -10,10 +10,11 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
     origins "*" # Ajuste esse valor para limitar os domínios permitidos
     resource "*",
       headers: :any,
-      methods: %i[get post put patch delete options head]
+      methods: %i[get post put patch delete options head],
+      expose: %i[Authorization]
   end
 end
 
-unless Rails.env.test?
-  Rails.application.config.middleware.use "GreenThumb", "API - OK!"
-end
+# unless Rails.env.test?
+#   Rails.application.config.middleware.use "GreenThumb", "API - OK!"
+# end

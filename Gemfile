@@ -54,6 +54,8 @@ gem "pagy"
 # ActiveModel::Serializer implementation and Rails hooks
 gem "active_model_serializers", "~> 0.10.0"
 
+gem "jsonapi-serializer"
+
 gem "pundit"
 
 group :development, :test do
