@@ -36,13 +36,35 @@ gem "bootsnap", require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem "rack-cors"
 
-gem 'devise'
-gem 'devise-jwt'
-gem 'pundit'
+# A pure ruby implementation of the RFC 7519 OAuth JSON Web Token (JWT) standard
+gem "jwt"
+
+# Token based authentication for Rails JSON APIs. Designed to work with jToker and ng-token-auth.
+gem "devise_token_auth"
+
+# A plugin for versioning Rails based RESTful APIs.
+gem "versionist"
+
+# Translations for the devise gem
+gem "devise-i18n"
+
+# A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
+gem "pagy"
+
+# ActiveModel::Serializer implementation and Rails hooks
+gem "active_model_serializers", "~> 0.10.0"
+
+gem "pundit"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "byebug"
+  # A library for generating fake data such as names, addresses, and phone numbers.
+  gem "faker"
+
+  gem "pry-rails"
+  gem "rspec-rails", "~> 3.5"
 end
 
 group :development do
@@ -55,4 +77,3 @@ group :development do
   gem "solargraph"
   gem "htmlbeautifier"
 end
-
