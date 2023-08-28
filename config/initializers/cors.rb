@@ -11,10 +11,6 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
     resource "*",
       headers: :any,
       methods: %i[get post put patch delete options head],
-      expose: %i[Authorization]
+      expose: ["Authorization"]
   end
 end
-
-# unless Rails.env.test?
-#   Rails.application.config.middleware.use "GreenThumb", "API - OK!"
-# end

@@ -18,4 +18,8 @@ class User < ApplicationRecord
     associate: 1,
     plot_manager: 2,
   }
+
+  def jwt_payload
+    super
+  end
 end

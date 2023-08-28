@@ -4,7 +4,7 @@ class ApplicationController < ActionController::API
   protected
 
   def configure_permitted_parameters
-    account_params = %i[name avatar]
+    account_params = %i[name avatar city_id]
 
     devise_parameter_sanitizer.permit(:sign_up, keys: account_params)
     devise_parameter_sanitizer.permit(:account_update, keys: account_params)
