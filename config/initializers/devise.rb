@@ -17,12 +17,12 @@ Devise.setup do |config|
   # config.secret_key = '45a2754ccd995da5d709207cf814ef77ec70da54ded59a4467ecddd693f9519a7d313df4256cc61908c60628412ac8c9b668e78d331a5c661b60a8636977b872'
 
   # Config Devise JWT
-  # config.jwt do |jwt|
-  #   jwt.secret = ENV["DEVISE_JWT_SECRET_KEY"]
-  #   jwt.dispatch_requests = [["POST", %r{^/api/sign_in$}]]
-  #   jwt.revocation_requests = [["DELETE", %r{^/api/sign_out$}]]
-  #   jwt.expiration_time = 1.day.to_i
-  # end
+  config.jwt do |jwt|
+    jwt.secret = ENV["DEVISE_JWT_SECRET_KEY"]
+    jwt.dispatch_requests = [["POST", %r{^/api/sign_in$}]]
+    jwt.revocation_requests = [["DELETE", %r{^/api/sign_out$}]]
+    jwt.expiration_time = 1.day.to_i
+  end
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
