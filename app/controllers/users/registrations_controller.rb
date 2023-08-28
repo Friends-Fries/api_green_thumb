@@ -9,6 +9,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # Overriding from devise
   def respond_with(current_user, _opts = {})
+    puts request.body.to_json
+    p UserSerializer.new(current_user).serializable_hash[:data][:attributes]
+    p UserSerializer.new(current_user).serializable_hash
     if resource.persisted?
       render json: {
         status: { code: 200, message: "Signed up successfully." },

@@ -50,7 +50,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_28_004023) do
     t.string "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "city_id", null: false
+    t.bigint "city_id"
     t.integer "role", default: 0, null: false
     t.boolean "admin", default: false, null: false
     t.string "name", null: false

@@ -10,10 +10,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :trackable, :registerable,
          :recoverable, :validatable, :jwt_authenticatable, jwt_revocation_strategy: self
 
-  belongs_to :city
-
-  # VALIDATIONS
-  validates :email, presence: true
+  belongs_to :city, optional: true
 
   # ENUMS
   enum role: {

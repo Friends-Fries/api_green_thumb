@@ -42,16 +42,11 @@ gem "versionist"
 # A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
 gem "pagy"
 
-# ActiveModel::Serializer implementation and Rails hooks
-gem "active_model_serializers", "~> 0.10.0"
-
 gem "devise"
 gem "devise-jwt"
 gem "jsonapi-serializer"
 # Translations for the devise gem
 gem "devise-i18n"
-
-gem "pundit"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
