@@ -36,17 +36,8 @@ gem "bootsnap", require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem "rack-cors"
 
-# A pure ruby implementation of the RFC 7519 OAuth JSON Web Token (JWT) standard
-gem "jwt"
-
-# Token based authentication for Rails JSON APIs. Designed to work with jToker and ng-token-auth.
-gem "devise_token_auth"
-
 # A plugin for versioning Rails based RESTful APIs.
 gem "versionist"
-
-# Translations for the devise gem
-gem "devise-i18n"
 
 # A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
 gem "pagy"
@@ -54,7 +45,11 @@ gem "pagy"
 # ActiveModel::Serializer implementation and Rails hooks
 gem "active_model_serializers", "~> 0.10.0"
 
+gem "devise"
+gem "devise-jwt"
 gem "jsonapi-serializer"
+# Translations for the devise gem
+gem "devise-i18n"
 
 gem "pundit"
 
