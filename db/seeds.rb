@@ -27,15 +27,15 @@ if Rails.env.development?
 
   ########## USER ##########
   # admin and volunteer
-  User.create!(name: "Atila", email: "admin@test.com", password: "123123", city: City.all.sample, admin: true)
+  # User.create!(name: "Atila", email: "admin@test.com", password: "123123", city: City.all.sample, admin: true)
 
-  User.create!(name: "Victor", email: "volunteer@test.com", password: "123123", city: City.all.sample)
+  # User.create!(name: "Victor", email: "volunteer@test.com", password: "123123", city: City.all.sample)
 
-  User.create!(name: "Guilherme", email: "associate@test.com", password: "123123", city: City.all.sample, role: 1)
+  # User.create!(name: "Guilherme", email: "associate@test.com", password: "123123", city: City.all.sample, role: 1)
 
-  User.create!(name: "Davis", email: "plot_manager@test.com", password: "123123", city: City.all.sample, role: 2)
+  # User.create!(name: "Davis", email: "plot_manager@test.com", password: "123123", city: City.all.sample, role: 2)
 
-  User.create!(name: "Willian", email: "plot_manager2@test.com", password: "123123", city: City.all.sample, role: 2)
+  # User.create!(name: "Willian", email: "plot_manager2@test.com", password: "123123", city: City.all.sample, role: 2)
 
   puts "#{User.where(admin: true).count} admins created successfully"
   puts "#{User.where.not(admin: true).count} users created successfully"
