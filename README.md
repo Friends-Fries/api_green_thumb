@@ -5,7 +5,7 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version 2.7.2p137
+* Ruby version 3.2
 * Rails 7.0.4.3
 
 * System dependencies
